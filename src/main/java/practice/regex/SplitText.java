@@ -7,8 +7,8 @@ public class SplitText {
   }
 
   public static String splitTextIntoWords(String text) {
-    //TODO реализуйте метод
-    return "";
+    return text.replaceAll("[;,.:0-9]","")
+               .replaceAll(" +", System.lineSeparator());
   }
 
 }
